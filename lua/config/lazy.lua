@@ -20,6 +20,11 @@ require("lazy").setup({
     --  { "LazyVim/LazyVim", import = "lazyvim.plugins", opts = { colorscheme = "solarized-osaka" } },
     { "LazyVim/LazyVim", import = "lazyvim.plugins", opts = { colorscheme = "vscode" } },
     -- import/override with your plugins
+    { import = "lazyvim.plugins.extras.ai.copilot" },
+    { import = "lazyvim.plugins.extras.lang.rust" },
+    { import = "lazyvim.plugins.extras.lang.python" },
+    { import = "lazyvim.plugins.extras.lang.java" },
+    { import = "lazyvim.plugins.extras.lang.clangd" },
     { import = "plugins" },
   },
   defaults = {
