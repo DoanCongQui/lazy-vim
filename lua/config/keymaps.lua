@@ -2,6 +2,7 @@
 -- Add any additional keymaps here
 
 local keymap = vim.keymap
+local builtin = require("telescope.builtin")
 local opts = { noremap = true, silent = true }
 
 -- Split window
@@ -14,3 +15,6 @@ keymap.set("n", "sh", "<C-w>h")
 keymap.set("n", "sk", "<C-w>k")
 keymap.set("n", "sj", "<C-w>j")
 keymap.set("n", "sl", "<C-w>l")
+
+-- Telescope
+-- vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Telescope find files" })
